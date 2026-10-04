@@ -200,11 +200,31 @@
 </head>
 <body>
   
-  .facticon.classic{width:auto;min-width:58px;height:auto;border-radius:999px;padding:6px 9px;background:#f3e9f5;color:var(--p);font-size:9px;letter-spacing:.08em;font-weight:900;display:inline-flex;align-items:center;justify-content:center}</style></head><body><div class="top"></div><header><div class="nav"><a class="brand" href="#home"><img src="images/uydn-logo.png" alt="UYDN logo"><div><b>UNICORN YOUTH DEVELOPMENT NETWORK</b><small>Youth Emerge. Build and Lead.</small></div></a><nav><a href="#about">About</a><a href="#details">Conference</a><a href="2026-highlights.html">2026 Highlights</a><a class="btn" href="#apply">Apply Now</a></nav></div></header>
-<section class="hero" id="home"><div class="inner"><span class="tag">TARABA NEXTGEN CONFERENCE 2027</span><h1>Taraba NEXTGEN <span>Youth Stakeholders Conference 2027</span></h1><div style="margin-top:18px;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.9">THEME</div><div class="theme"><b>Grow Here.</b> <b>Build Here.</b> <b>Prosper Here.</b></div><p style="margin-top:6px"><em>Youth and Women Transforming Agriculture into Jobs, Enterprise and Climate Solutions</em></p><div class="facts"><div class="fact">24–26 June 2027</div><div class="fact">Jalingo, Taraba State, Nigeria</div><div class="fact">150 Young Delegates · Ages 18–35</div></div><div class="actions"><a class="btn" href="#apply">Start Application →</a><a class="btn secondary" href="2026-highlights.html">Relive NEXTGEN 2026</a></div><div class="quote">“What if the greener pasture young people are searching for is already growing beneath their feet?”</div></div></section>
+  .facticon.classic{width:auto;min-width:58px;height:auto;border-radius:999px;padding:6px 9px;background:#f3e9f5;color:var(--p);font-size:9px;letter-spacing:.08em;font-weight:900;display:inline-flex;align-items:center;justify-content:center}
+/* ===== COUNTDOWN ===== */
+.uydn-cd{margin:0 0 26px;max-width:460px}
+.uydn-cd-label{font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.9;margin-bottom:10px}
+.uydn-cd-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.uydn-cd-box{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:14px 4px 11px;text-align:center;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.uydn-cd-box b{display:block;font:800 34px/1.1 ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;font-variant-numeric:tabular-nums;color:#fff;letter-spacing:.02em}
+.uydn-cd-box span{display:block;margin-top:6px;font:700 10px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.68)}
+.uydn-cd-msg{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:16px 18px;font-weight:800;font-size:17px;line-height:1.4;color:#fff}
+@media(max-width:520px){.uydn-cd{max-width:none}.uydn-cd-grid{gap:8px}.uydn-cd-box{padding:12px 2px 10px;border-radius:12px}.uydn-cd-box b{font-size:27px}.uydn-cd-box span{font-size:9px;letter-spacing:.1em}}
+
+/* ===== WORD COUNTER + WHATSAPP GROUP CARD ===== */
+.wc{font-size:12px;color:#667085;text-align:right;margin-top:4px}
+.wc.max{color:#b93815;font-weight:700}
+.wagroup{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:#effaf3;border:1px solid #bfe8cf;border-radius:14px;padding:16px 18px;margin-top:20px}
+.wagroup .wag-text{flex:1 1 220px;display:flex;flex-direction:column;gap:4px;color:#14532d;line-height:1.45}
+.wagroup .wag-text span{font-size:13px;color:#3f6b50}
+.wag-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#25d366;color:#fff!important;font-weight:800;font-size:15px;padding:13px 20px;border-radius:999px;text-decoration:none;box-shadow:0 6px 16px rgba(37,211,102,.3)}
+.wag-btn:hover{filter:brightness(.96)}
+@media(max-width:520px){.wagroup .wag-btn{width:100%}}
+</style></head><body><div class="top"></div><header><div class="nav"><a class="brand" href="#home"><img src="images/uydn-logo.png" alt="UYDN logo"><div><b>UNICORN YOUTH DEVELOPMENT NETWORK</b><small>Youth Emerge. Build and Lead.</small></div></a><nav><a href="#about">About</a><a href="#details">Conference</a><a href="2026-highlights.html">2026 Highlights</a><a class="btn" href="#apply">Apply Now</a></nav></div></header>
+<section class="hero" id="home"><div class="inner"><span class="tag">TARABA NEXTGEN CONFERENCE 2027</span><h1>Taraba NEXTGEN <span>Youth Stakeholders Conference 2027</span></h1><div style="margin-top:18px;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.9">THEME</div><div class="theme"><b>Grow Here.</b> <b>Build Here.</b> <b>Prosper Here.</b></div><p style="margin-top:6px"><em>Youth and Women Transforming Agriculture into Jobs, Enterprise and Climate Solutions</em></p><div class="facts"><div class="fact">24–26 June 2027</div><div class="fact">Jalingo, Taraba State, Nigeria</div><div class="fact">150 Young Delegates · Ages 18–35</div></div><div class="uydn-cd" id="uydnCountdown" role="timer" aria-label="Countdown to the Taraba NEXTGEN Conference 2027"><div class="uydn-cd-label" id="cdLabel">Conference begins in</div><div class="uydn-cd-grid" id="cdGrid"><div class="uydn-cd-box"><b id="cdD">--</b><span>Days</span></div><div class="uydn-cd-box"><b id="cdH">--</b><span>Hours</span></div><div class="uydn-cd-box"><b id="cdM">--</b><span>Minutes</span></div><div class="uydn-cd-box"><b id="cdS">--</b><span>Seconds</span></div></div><div class="uydn-cd-msg" id="cdMsg" hidden></div></div><div class="actions"><a class="btn" href="#apply">Start Application →</a><a class="btn secondary" href="2026-highlights.html">Relive NEXTGEN 2026</a></div><div class="quote">“What if the greener pasture young people are searching for is already growing beneath their feet?”</div></div></section>
 <section class="section" id="details"><h2>Grow here. Build here. Prosper here.</h2><p class="lead">The conference will bring together 150 young people aged 18–35 from the 16 LGAs of Taraba State, other parts of Nigeria and internationally to explore how agriculture can become a stronger pathway to jobs, entrepreneurship, investment, women's economic empowerment and climate resilience.</p><div class="cards"><div class="mini"><div class="icon">01</div><h3>When</h3><p>24–26 June 2027</p></div><div class="mini"><div class="icon">02</div><h3>Where</h3><p>Jalingo, Taraba State, Nigeria</p></div><div class="mini"><div class="icon">03</div><h3>Delegates</h3><p><strong>150 Young Delegates</strong><br><strong>100</strong> Local Delegates — Taraba State LGAs<br><strong>30</strong> National Delegates — other Nigerian states<br><strong>20</strong> International Delegates — outside Nigeria</p></div><div class="mini"><div class="icon">04</div><h3>Organiser</h3><p>Unicorn Youth Development Network</p></div></div></section>
 <section class="section" id="about"><div class="about"><div><span class="tag" style="color:var(--p);border-color:#dfd2e4;background:#f8f1fa">ABOUT THE ORGANISER</span><h2>Unicorn Youth Development Network</h2><p class="lead">UYDN is the main organisation behind Taraba NEXTGEN Conference. Through youth-focused programmes and collaborative initiatives, the network creates spaces for young people to develop leadership capacity, engage with community issues and turn ideas into action.</p><div class="socials"><a class="social facebook" href="https://www.facebook.com/profile.php?id=61585072857531" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>Facebook</a><a class="social instagram" href="https://www.instagram.com/unicornyouthdevelopment?igsh=MXZxanhrdmpmb2d1cQ==" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>Instagram</a><a class="social twitter" href="https://x.com/UnicornYouth" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M18.24 2H21.9l-7.99 9.13L23.3 22h-7.35l-5.76-7.53L3.6 22H-.06l8.54-9.76L-.53 2h7.54l5.2 6.87L18.24 2zm-1.28 18.09h2.03L5.91 3.81H3.73l13.23 16.28z"/></svg>X</a></div></div><img src="images/networking.jpg" alt="Taraba NEXTGEN participants"></div></section>
-<section class="tradition-gallery" id="tradition-night"><div class="section"><div class="gallery-head"><span class="eyebrow">Taraba NEXTGEN Conference 2026</span><h2>Tradition Night Gallery</h2><p class="lead" style="margin-left:auto;margin-right:auto">A colourful celebration of culture, diversity, unity and youth during Taraba NEXTGEN Conference 2026.</p></div><div class="tradition-grid"><div class="tradition-card" onclick="openLightbox('images/tradition-night-1.jpg')"><img src="images/tradition-night-1.jpg" alt="Tradition Night at Taraba NEXTGEN Conference 2026" loading="lazy"></div><div class="tradition-card" onclick="openLightbox('images/tradition-night-2.jpg')"><img src="images/tradition-night-2.jpg" alt="Delegates celebrating Tradition Night at Taraba NEXTGEN Conference 2026" loading="lazy"></div><div class="tradition-card" onclick="openLightbox('images/tradition-night-3.jpg')"><img src="images/tradition-night-3.jpg" alt="Young delegates during Tradition Night at Taraba NEXTGEN Conference 2026" loading="lazy"></div></div><p class="gallery-note">Tap or click any photo to view it in full.</p><div class="socials gallery-socials"><a class="social-facebook" href="https://www.facebook.com/profile.php?id=61585072857531" target="_blank" rel="noopener">Facebook ↗</a><a class="social-instagram" href="https://www.instagram.com/unicornyouthdevelopment?igsh=MXZxanhrdmpmb2d1cQ==" target="_blank" rel="noopener">Instagram ↗</a><a class="social-x" href="https://x.com/UnicornYouth" target="_blank" rel="noopener">X ↗</a></div></div></section><div class="lightbox" id="photoLightbox" onclick="closeLightbox(event)"><button class="lightbox-close" type="button" aria-label="Close photo" onclick="closeLightbox(event,true)">×</button><img id="lightboxImage" src="" alt="Tradition Night enlarged photo"></div><section class="section" id="testimonials"><div class="gallery-head"><span class="eyebrow">Voices from NEXTGEN 2026</span><h2>Delegate Testimonials</h2><p class="lead" style="margin-left:auto;margin-right:auto">Hear directly from delegates who participated in the previous edition.</p></div><div class="testimonial-grid"><div class="testimonial-card"><video controls preload="metadata" playsinline src="videos/philip.mp4"></video><h3>Philip Musa</h3><p>National Delegate — Borno State</p></div><div class="testimonial-card"><video controls preload="metadata" playsinline src="videos/abigail.mp4"></video><h3>Julius Abigail Boyi</h3><p>Local Delegate — Takum LGA, Taraba State</p></div><div class="testimonial-card"><video controls preload="metadata" playsinline src="videos/zion.mp4"></video><h3>Zion Kennedy</h3><p>National Delegate — Adamawa State</p></div><div class="testimonial-card"><video controls preload="metadata" playsinline src="videos/julius-christopher.mp4"></video><h3>Julius Christopher</h3><p>Local Delegate — Karim Lamido LGA, Taraba State</p></div><div class="testimonial-card"><video controls preload="metadata" playsinline src="videos/rhema-emmanuel.mp4"></video><h3>Rhema Emmanuel</h3><p>Local Delegate — Bali LGA, Taraba State</p></div></div></section>
+<section class="tradition-gallery" id="tradition-night"><div class="section"><div class="gallery-head"><span class="eyebrow">Taraba NEXTGEN Conference 2026</span><h2>Tradition Night Gallery</h2><p class="lead" style="margin-left:auto;margin-right:auto">A colourful celebration of culture, diversity, unity and youth during Taraba NEXTGEN Conference 2026.</p></div><div class="tradition-grid"><div class="tradition-card" onclick="openLightbox('images/tradition-night-1.jpg')"><img src="images/tradition-night-1.jpg" alt="Tradition Night at Taraba NEXTGEN Conference 2026" loading="lazy"></div><div class="tradition-card" onclick="openLightbox('images/tradition-night-2.jpg')"><img src="images/tradition-night-2.jpg" alt="Delegates celebrating Tradition Night at Taraba NEXTGEN Conference 2026" loading="lazy"></div><div class="tradition-card" onclick="openLightbox('images/tradition-night-3.jpg')"><img src="images/tradition-night-3.jpg" alt="Young delegates during Tradition Night at Taraba NEXTGEN Conference 2026" loading="lazy"></div></div><p class="gallery-note">Tap or click any photo to view it in full.</p><div class="socials gallery-socials"><a class="social-facebook" href="https://www.facebook.com/profile.php?id=61585072857531" target="_blank" rel="noopener">Facebook ↗</a><a class="social-instagram" href="https://www.instagram.com/unicornyouthdevelopment?igsh=MXZxanhrdmpmb2d1cQ==" target="_blank" rel="noopener">Instagram ↗</a><a class="social-x" href="https://x.com/UnicornYouth" target="_blank" rel="noopener">X ↗</a></div></div></section><div class="lightbox" id="photoLightbox" onclick="closeLightbox(event)"><button class="lightbox-close" type="button" aria-label="Close photo" onclick="closeLightbox(event,true)">×</button><img id="lightboxImage" src="" alt="Tradition Night enlarged photo"></div><section class="section" id="testimonials"><div class="gallery-head"><span class="eyebrow">Voices from NEXTGEN 2026</span><h2>Delegate Testimonials</h2><p class="lead" style="margin-left:auto;margin-right:auto">Hear directly from delegates who participated in the previous edition.</p></div><div class="testimonial-grid"><div class="testimonial-card"><video controls preload="metadata" playsinline src="videos/philip.mp4"></video><h3>Philip Musa</h3><p>National Delegate — Borno State</p></div><div class="testimonial-card"><video controls preload="metadata" playsinline src="videos/abigail.mp4"></video><h3>Julius Abigail Boyi</h3><p>Local Delegate — Takum LGA, Taraba State</p></div><div class="testimonial-card"><video controls preload="metadata" playsinline src="videos/zion.mp4"></video><h3>Zion Kennedy</h3><p>National Delegate — Adamawa State</p></div><div class="testimonial-card"><video controls preload="metadata" playsinline src="videos/julius-christopher.mp4"></video><h3>Julius Christopher</h3><p>Local Delegate — Karim Lamido LGA, Taraba State</p></div><div class="testimonial-card"><video controls preload="metadata" playsinline src="videos/rhema-emmanuel.mov"></video><h3>Rhema Emmanuel</h3><p>Local Delegate — Bali LGA, Taraba State</p></div></div></section>
 <section class="recap"><div class="section"><div class="recapbox"><div class="recapimg"></div><div class="recaptxt"><span class="year">PREVIOUS EDITION</span><h2>Relive Taraba NEXTGEN Conference 2026</h2><p>Held in Jalingo, Taraba State on 26–27 June 2026, the previous edition brought young delegates together for panel conversations, situational reports, challenge-table sessions, networking and collaborative learning under the theme “Rethink, Rebuild, Reclaim Taraba.”</p><div><a class="btn" href="2026-highlights.html">View 2026 Highlights →</a></div></div></div></div></section>
 <section class="section" id="eligibility"><div class="formwrap" style="padding:30px"><span class="tag" style="color:var(--p);border-color:#dfd2e4;background:#f8f1fa">BEFORE YOU APPLY</span><h2 style="margin-top:14px">Eligibility</h2><p class="lead">Applicants should review these requirements before starting the application.</p><div class="cards" style="grid-template-columns:repeat(2,1fr)"><div class="mini"><h3>1. Age</h3><p>Applicants must be between 18 and 35 years old at the time of the conference.</p></div><div class="mini"><h3>2. Simple Data & Survey Ability</h3><p>Applicants should be able to participate in simple surveys, questionnaires, data collection or basic community information-gathering activities when required.</p></div><div class="mini"><h3>3. Local Delegate Residency</h3><p>Applicants seeking representation as a local delegate from a Taraba LGA must currently reside in the LGA they are applying to represent, regardless of their State or LGA of origin.</p></div><div class="mini"><h3>4. Interest & Community Engagement</h3><p>Applicants should demonstrate interest in agriculture, enterprise, climate action, youth development, innovation or community development.</p></div><div class="mini full"><h3>5. Full Participation</h3><p>Applicants must be willing and available to participate fully from 24–26 June 2027 and complete reasonable pre- or post-conference activities required of selected delegates.</p></div></div><p class="noticebox" style="margin-top:20px;margin-bottom:0"><b>Please note:</b> Meeting the eligibility requirements does not automatically guarantee selection. Applications will be reviewed based on the conference selection criteria and available delegate spaces.</p></div></section>
 <section class="section" id="apply"><div class="formwrap"><div class="formhead"><h2>Apply for Taraba NEXTGEN Conference 2027</h2><p>Please complete this application carefully and honestly. Required fields are marked *.</p></div><div class="progress-wrap"><div class="progress-meta"><span id="stepText">Step 1 of 5</span>
@@ -233,7 +253,7 @@
     <div>
       <label>4. Age Range *</label>
       <select required name="age">
-        <option value="">Select</option>
+        <option value="" selected disabled>Select</option>
         <option>18–24</option>
         <option>25–29</option>
         <option>30–35</option>
@@ -257,7 +277,7 @@
     <div>
       <label>7. State of Residence *</label>
       <select required name="state_residence">
-        <option value="">Select state</option>
+        <option value="" selected disabled>Select state</option>
         <option>Abia</option>
         <option>Adamawa</option>
         <option>Akwa Ibom</option>
@@ -302,7 +322,7 @@
     <div>
       <label>8. State of Origin *</label>
       <select required name="state_origin">
-        <option value="">Select state of origin</option>
+        <option value="" selected disabled>Select state of origin</option>
         <option>Abia</option>
         <option>Adamawa</option>
         <option>Akwa Ibom</option>
@@ -365,7 +385,7 @@
     <div>
       <label>11. Current Occupation/Status *</label>
       <select required name="occupation">
-        <option value="">Select</option>
+        <option value="" selected disabled>Select</option>
         <option>Student</option>
         <option>Employed</option>
         <option>Entrepreneur/Business Owner</option>
@@ -441,11 +461,11 @@
 
 <div class="step">
   <h3>04 — GROW HERE. BUILD HERE. PROSPER HERE.</h3>
-  <div><label>What does “Grow Here. Build Here. Prosper Here.” mean to you? *</label><textarea required name="theme_meaning"></textarea></div>
-  <div style="margin-top:18px"><label>What agricultural opportunity do you believe young people in Taraba are currently overlooking? *</label><textarea required name="overlooked_agri_opportunity"></textarea></div>
-  <div style="margin-top:18px"><label>If you had access to funding, mentorship and technical support, what agriculture-related business or solution would you build? *</label><textarea required name="agri_solution"></textarea></div>
-  <div style="margin-top:18px"><label>How is climate change affecting agriculture or livelihoods in your community? *</label><textarea required name="climate_impact"></textarea></div>
-  <div style="margin-top:18px"><label>What role should young people play in making agriculture more climate-resilient? *</label><textarea required name="youth_climate_role"></textarea></div>
+  <div><label>18. What does “Grow Here. Build Here. Prosper Here.” mean to you? *</label><textarea required name="theme_meaning"></textarea></div>
+  <div style="margin-top:18px"><label>19. What agricultural opportunity do you believe young people in Taraba are currently overlooking? *</label><textarea required name="overlooked_agri_opportunity"></textarea></div>
+  <div style="margin-top:18px"><label>20.  When you don't have access to funding or government support, what agricultural innovation or local methodology would you build to solve the unemployment challenge in your community? *</label><textarea required name="agri_solution"></textarea></div>
+  <div style="margin-top:18px"><label>21. How is climate change affecting agriculture or livelihoods in your community? *</label><textarea required name="climate_impact"></textarea></div>
+  <div style="margin-top:18px"><label>22. What role should young people play in making agriculture more climate-resilient? *</label><textarea required name="youth_climate_role"></textarea></div>
 </div>
 
 <div class="step">
@@ -453,31 +473,32 @@
 
   <div>
     <label>
-      18. Why do you want to participate in Taraba NEXTGEN Conference 2027, and what do you hope to gain? *
+      23. Why do you want to participate in Taraba NEXTGEN Conference 2027, and what do you hope to gain? *
     </label>
     <textarea required name="motivation"></textarea>
   </div>
 
   <div style="margin-top:18px">
     <label>
-      19. What is one practical action you would be willing to take after the conference? *
+      24. What is one practical action you would be willing to take after the conference? *
     </label>
     <textarea required name="post_action"></textarea>
   </div>
 
   <div style="margin-top:18px">
     <label>
-      20. Would you like to showcase a business, project, research, innovation or solution at the conference?
+      25. Would you like to showcase a business, project, research, innovation or solution at the conference? *
     </label>
 
-    <select name="showcase" id="showcase">
+    <select required name="showcase" id="showcase">
+      <option value="" selected disabled>Select</option>
       <option>No</option>
       <option>Yes</option>
     </select>
 
     <div class="conditional" id="showcaseDesc">
       <label style="margin-top:12px">
-        If yes, briefly describe it.
+        If yes, briefly describe it. *
       </label>
       <textarea name="showcase_description" id="showcaseDescription"></textarea>
     </div>
@@ -485,11 +506,11 @@
 
   <div style="margin-top:18px">
     <label>
-      21. Are you available to participate fully from 24–26 June 2027? *
+      26. Are you available to participate fully from 24–26 June 2027? *
     </label>
 
     <select required name="availability">
-      <option value="">Select</option>
+      <option value="" selected disabled>Select</option>
       <option>Yes</option>
       <option>No</option>
       <option>Not sure</option>
@@ -498,10 +519,11 @@
 
   <div style="margin-top:18px">
     <label>
-      22. Would you be interested in joining a post-conference NEXTGEN Youth Agriculture & Climate Network/Taskforce?
+      27. Would you be interested in joining a post-conference NEXTGEN Youth Agriculture & Climate Network/Taskforce? *
     </label>
 
-    <select name="taskforce">
+    <select required name="taskforce">
+      <option value="" selected disabled>Select</option>
       <option>Yes</option>
       <option>No</option>
       <option>Maybe</option>
@@ -521,7 +543,7 @@
   </div>
 
   <div>
-    <span class="label">Applicant Declaration *</span>
+    <span class="label">28. Applicant Declaration *</span>
 
     <p style="color:var(--muted);line-height:1.6">
       I confirm that the information provided in this application is accurate
@@ -535,6 +557,14 @@
       Yes, I agree
     </label>
   </div>
+<div class="wagroup">
+  <div class="wag-text">
+    <b>Join our WhatsApp group for updates</b>
+    <span>Stay informed about selection, announcements and important information from the Taraba NEXTGEN team.</span>
+  </div>
+  <a class="wag-btn" href="https://chat.whatsapp.com/DFGRUzjZoQf6J2SA88iDhm" target="_blank" rel="noopener noreferrer">💬 Join the WhatsApp Group →</a>
+</div>
+
 <p style="margin-top:16px;color:var(--muted);line-height:1.6;">
   By submitting this application, you confirm that you have read and agree to our
   <a href="#" id="openTerms" style="color:#0f766e;font-weight:700;text-decoration:underline;">
@@ -916,7 +946,8 @@ if (!result.success) {
     success.innerHTML=`<b>Application Received ✓</b><br><br>
       Thank you for applying to the <b>Taraba NEXTGEN Youth Stakeholders Conference 2027</b>.<br><br>
       Your Application ID is: <b>${result.applicationId}</b><br><br>
-      Please keep this ID for reference. A confirmation email will be sent to the email address you provided.`;
+      Please keep this ID for reference. A confirmation email will be sent to the email address you provided.<br><br>
+      <a class="wag-btn" href="https://chat.whatsapp.com/DFGRUzjZoQf6J2SA88iDhm" target="_blank" rel="noopener noreferrer">💬 Join the WhatsApp Group for updates →</a>`;
    success.style.display='block';
 success.scrollIntoView({behavior:'smooth',block:'center'});
 
@@ -1430,4 +1461,95 @@ if (supportBtn && supportPanel && supportClose) {
 
 })();
 
+</script><script>
+/* ===== 100-WORD LIMIT FOR EVERY WRITTEN ANSWER ===== */
+(function () {
+  var MAX_WORDS = 100;
+
+  function countWords(t) {
+    var m = t.match(/\S+/g);
+    return m ? m.length : 0;
+  }
+
+  function limit(t) {
+    // keep the text exactly as typed, but cut it off after the 100th word
+    var re = /\S+/g, m, n = 0;
+    while ((m = re.exec(t)) !== null) {
+      n++;
+      if (n > MAX_WORDS) return t.slice(0, m.index).replace(/\s+$/, '');
+    }
+    return t;
+  }
+
+  document.querySelectorAll('#app textarea').forEach(function (ta) {
+    var wc = document.createElement('div');
+    wc.className = 'wc';
+    ta.insertAdjacentElement('afterend', wc);
+
+    function update() {
+      if (countWords(ta.value) > MAX_WORDS) ta.value = limit(ta.value);
+      var n = countWords(ta.value);
+      wc.textContent = n + ' / ' + MAX_WORDS + ' words';
+      wc.className = 'wc' + (n >= MAX_WORDS ? ' max' : '');
+    }
+
+    ta.addEventListener('input', update);
+    ta.addEventListener('change', update);
+    update();
+  });
+})();
+</script><script>
+/* ===== CONFERENCE COUNTDOWN =====
+   Change the two dates below if the programme times change.
+   Times are Nigeria time (UTC+1). */
+(function () {
+  var CONFERENCE_START = '2027-06-24T00:00:00+01:00';
+  var CONFERENCE_END   = '2027-06-26T23:59:59+01:00';
+
+  var start = new Date(CONFERENCE_START).getTime();
+  var end   = new Date(CONFERENCE_END).getTime();
+
+  var box = document.getElementById('uydnCountdown');
+  if (!box || isNaN(start) || isNaN(end)) return;
+
+  var elD = document.getElementById('cdD'), elH = document.getElementById('cdH'),
+      elM = document.getElementById('cdM'), elS = document.getElementById('cdS'),
+      grid = document.getElementById('cdGrid'), label = document.getElementById('cdLabel'),
+      msg = document.getElementById('cdMsg');
+
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+  function tick() {
+    var now = Date.now();
+
+    if (now >= start && now <= end) {
+      grid.hidden = true; label.hidden = true; msg.hidden = false;
+      msg.textContent = '🎉 Taraba NEXTGEN Conference 2027 is happening now!';
+      return;
+    }
+
+    if (now > end) {
+      grid.hidden = true; label.hidden = true; msg.hidden = false;
+      msg.textContent = 'Thank you for being part of Taraba NEXTGEN Conference 2027.';
+      clearInterval(timer);
+      return;
+    }
+
+    grid.hidden = false; label.hidden = false; msg.hidden = true;
+
+    var diff = Math.floor((start - now) / 1000);
+    var d = Math.floor(diff / 86400); diff -= d * 86400;
+    var h = Math.floor(diff / 3600);  diff -= h * 3600;
+    var m = Math.floor(diff / 60);
+    var sec = diff - m * 60;
+
+    elD.textContent = pad(d);
+    elH.textContent = pad(h);
+    elM.textContent = pad(m);
+    elS.textContent = pad(sec);
+  }
+
+  var timer = setInterval(tick, 1000);
+  tick();
+})();
 </script></body></html>
