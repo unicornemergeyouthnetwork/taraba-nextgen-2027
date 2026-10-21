@@ -628,3 +628,28 @@ body .uydn-cd-box b, body .uydn-cd-box span { font-family: 'Plus Jakarta Sans', 
     height: 200px;
   }
 }
+/* Keep tree-planting images at a moderate viewing size */
+.tree-gallery-section .tree-photo img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Limit the size of the enlarged image */
+.tree-lightbox img,
+.tree-lightbox-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 85vw;
+  max-height: 75vh;
+  object-fit: contain;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .tree-lightbox img,
+  .tree-lightbox-image {
+    max-width: 92vw;
+    max-height: 65vh;
+  }
+}
