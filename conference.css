@@ -596,3 +596,35 @@ body .uydn-cd-box b, body .uydn-cd-box span { font-family: 'Plus Jakarta Sans', 
 .privacy-entry button, .footer-navigation button { font: inherit; color: inherit; padding: 0; border: 0; background: none; cursor: pointer; text-decoration: underline; text-underline-offset: 4px; }
 #apply .privacy-entry { font-size: 12px; margin-top: 12px; }
 [data-privacy-open]:focus-visible { outline: 2px solid var(--t); outline-offset: 4px; }
+
+
+/* Tree Planting Gallery — responsive image sizing */
+.tree-gallery-section .tree-photo {
+  display: block;
+  width: 100%;
+  height: 260px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 8px;
+  background: #f3f4f6;
+  cursor: pointer;
+}
+
+.tree-gallery-section .tree-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tree-gallery-section .tree-photo:hover img {
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .tree-gallery-section .tree-photo {
+    height: 200px;
+  }
+}
